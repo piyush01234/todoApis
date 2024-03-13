@@ -22,7 +22,7 @@ import com.example.todo.entities.Todo;
 import com.example.todo.service.TodoService;
 
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "${client.url}")
 public class MyController {
 	@Autowired
 	private TodoService todoService;
